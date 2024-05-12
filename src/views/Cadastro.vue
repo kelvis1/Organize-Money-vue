@@ -1,0 +1,196 @@
+<template>
+<form id="cadastro" @submit="criarConta">
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça seu Registro<br>E Organize seu Dinheiro</h1>
+            <img src="" class="Money" alt="Dinheiro">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>REGISTRO</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" name="usuario" v-model="nome" required placeholder="Usuário">
+                </div>
+                <div class="textfield">
+                    <label for="Email">Email:</label>
+                    <input type="email" name="email" v-model="email" required placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" v-model="senha" required placeholder="Senha">
+                </div>
+               
+               <button class="btn-registro">Registro</button>
+               
+                <p>ou clique aqui: <router-link to="/login"> <button class="btn-login">Login</button></router-link></p>
+            </div>
+        </div>
+       
+    </div>
+ </form>
+
+</template>
+
+<script >
+
+export default{
+    name: "cadastro",
+    data(){
+        return{
+            nome:  null,
+            email: null,
+            senha: null
+        }
+    },
+    methods:{
+        criarConta(e){
+            e.preventDefault();
+            console.log(this);
+            if(this.senha.length <= 8){
+                alert('A senha deve ter pelo menos 8 caracteres.');
+                return;
+            }
+            localStorage.setItem("nomes", this.nome)
+            localStorage.setItem("emails", this.email)
+            localStorage.setItem("senhas", this.senha)
+            this.$router.push('/home');
+        }
+        
+    }
+};
+
+</script>
+
+<style scoped>
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.left-login > h1{
+font-size: 3vw;
+color: #77ffc0;
+}
+
+.left-login-image{
+    width: 35vw;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    height: 86vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+.card-login > h1{
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+.textfield{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    box-sizing: border-box;
+}
+
+.textfield > label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+.textfield > input::placeholder{
+    color: #f0ffff94;
+}
+
+.btn-registro{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform:uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background: #00ff88;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+.btn-login{
+    background: transparent;
+    color: #00ff88;
+    padding: none;
+    border-color:#77ffc0;
+}
+
+p{
+    margin-left: 23vh;
+    color: #00ff88;
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 100%;
+    }
+}
+    @media only screen and (max-width: 600px){
+    .main-login{
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .left-login > h1{
+        display: none;
+        margin-bottom: 4px;
+    }
+
+    }
+
+
+</style>
