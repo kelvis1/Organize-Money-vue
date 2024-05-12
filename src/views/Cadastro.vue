@@ -47,7 +47,7 @@ export default{
         criarConta(e){
             e.preventDefault();
             console.log(this);
-            if(this.senha.length <= 8){
+            if(this.senha.length < 8){
                 alert('A senha deve ter pelo menos 8 caracteres.');
                 return;
             }
