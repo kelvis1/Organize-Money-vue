@@ -17,24 +17,36 @@
         </ul>
       </div>
     </div>
-    <div class="row mt-4 justify-content-center">
-      <Cards :titulo="'lllll'"/>
-      <Cards :titulo="'lllll'"/>
-      <Cards :titulo="'lllll'"/>
+    <div class="row mt-4 m-0 justify-content-center">
+      <Cards :titulo="'Saldo'"/>
+      <Cards :titulo="'Despesa'"/>
+      <Cards :titulo="'Outros'"/>
+      <Boxcenter :titulo="'Boxcenter'" />
     </div>
+   
   </div>
   
 </template>
 
 <script>
 import Cards from "../components/Cards.vue";
+import Boxcenter from '@/components/Boxcenter.vue';
+
 
 export default {
   name: "home",
   components: {
     Cards,
+    Boxcenter,
   },
+  data(){
+   return{
+     isSidebarOpen: false,
+   };
+  },
+
 };
+
 </script>
 
 <style scoped>
@@ -42,7 +54,7 @@ export default {
 
 
 .corFundo {
-  background-color: #110923;
+  background-color: #110932;
 
 }
 
@@ -89,7 +101,7 @@ export default {
   margin-top: 60px;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
-  background: linear-gradient(180deg, #514869 50%, #00000056 100%);
+  background: linear-gradient(180deg,  #00000056 50%, #514869 100%);
 }
 
 .sidebarMenuInner {
@@ -121,6 +133,8 @@ export default {
   cursor: pointer;
   text-decoration: none;
 }
+
+
 
 input[type="checkbox"]:checked ~ #sidebarMenu {
   transform: translateX(0);

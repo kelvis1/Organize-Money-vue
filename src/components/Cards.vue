@@ -34,8 +34,11 @@ export default {
     cursor: pointer;
     color: #2b134b;
     background: #00ff88;
-     box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
 }
     
+.card-body:hover{
+  background:#77ffc0;
+}
 
 </style>
