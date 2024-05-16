@@ -1,15 +1,13 @@
 <template>
  <nav class="navbar bg-success shadow">
   <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Menu</span>
+    <span class="navbar-brand mb-0 h1">Organize Money</span>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <span class="navbar-toggler-icon"></span>
     </button>
   </div>
 </nav>
-
-
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-fullscreen">
     <div class="modal-content">
