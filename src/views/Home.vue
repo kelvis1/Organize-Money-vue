@@ -1,7 +1,7 @@
 <template>
  <nav class="navbar bg-success shadow">
   <div class="container-fluid">
-    <span class="navbar-brand mb-0 h1">Organize Money</span>
+    <span class="navbar-brand mb-0 h1 shadow">Organize Money</span>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <span class="navbar-toggler-icon"></span>
