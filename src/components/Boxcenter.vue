@@ -118,13 +118,28 @@ export default {
         margin: 50px auto 20px auto;
     }
      .card-title{
-      color: rgb(255, 255, 255);
+      color: #4e3a3b;
       font-family: 'Varela' sans-serif;
     }
     .card-img{
-       background: linear-gradient(180deg,  #781af4 0%, #2b134b 100%);
+      background: #e4bb29;
       height: 100vh;
     }
-    
+    .modal-footer{
+      background: #ba4c57;
+    }
+    .modal-body{
+      background: #ba4c57;
+    }
+    .modalfade{
+      background: #ba4c57;
+    }
+    .modal-header{
+      background: #ba4c57;
+    }
+    .btn{
+     background: #4e3a3b; 
+    }
+   
 
 </style>

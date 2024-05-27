@@ -24,6 +24,7 @@ export default {
 
 <style scoped>
 
+
 .card-body{
     border: none;
     border-radius: 8px;
@@ -32,13 +33,14 @@ export default {
     font-weight: 800;
     letter-spacing: 3px;
     cursor: pointer;
-    color: #2b134b;
-    background: #00ff88;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    color:#4e3a3b;
+    background: #e4bb29;
+
+    
 }
     
 .card-body:hover{
-  background:#77ffc0;
+  background:#a59571;
 }
 
 </style>

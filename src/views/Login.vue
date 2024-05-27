@@ -3,7 +3,7 @@
   <div class="main-login">
         <div class="left-login">
             <h1>Faça login <br>E Organize seu Dinheiro</h1>
-            <img src="/img/Money.svg" class="Money" alt="Dinheiro">
+            <img src="" class="Money" alt="Dinheiro">
         </div>
         <div class="right-login">
             <div class="card-login">
@@ -49,102 +49,87 @@ export default{
 
 <style scoped>
 
-body{
-    margin: 0;
-    font-family: sans-serif;
-}
+
 .main-login{
-    width: 100vw;
-    height: 100vh;
-    background: #201b2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #e46d29;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .left-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .left-login > h1{
-font-size: 3vw;
-color: #77ffc0;
+  font-size: 3vw;
+  color: #4e3a3b;
 }
-
-.left-login-image{
-    width: 35vw;
-}
-
 .right-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 .card-login{
-    width: 60%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: #2f2841;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
+  width: 60%;
+  height: 86vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background: #ba4c57;
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #512025;
 }
-.card-login > h1{
-    color: #00ff88;
-    font-weight: 800;
-    margin: 0;
+.card-login >h1{
+  color: #4e3a3b;
+  font-weight: 800;
 }
 .textfield{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 10px 0px;
 }
 .textfield > input{
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background: #514869;
-    color: f0ffffde;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
-    box-sizing: border-box;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #d0bc87;
+  color:#4e3a3b;
+  font-size: 12pt;
 }
-
 .textfield > label{
-    color: #f0ffffde;
-    margin-bottom: 10px;
+  color:#4e3a3b;
+  margin-bottom: 5px;
 }
 .textfield > input::placeholder{
-    color: #f0ffff94;
+  color: #512025;
 }
-
 .btn-login{
     width: 100%;
     padding: 16px 0px;
-    margin: 25px;
     border: none;
     border-radius: 8px;
     outline: none;
     text-transform:uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background: #00ff88;
+    color:#d0bc87;
+    background:#4e3a3b;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px #1f212052;
 }
 @media only screen and (max-width: 950px){
     .card-login{
@@ -163,6 +148,5 @@ color: #77ffc0;
     }
 
     }
-
 
 </style>

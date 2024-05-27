@@ -1,5 +1,5 @@
 <template>
- <nav class="navbar bg-success shadow">
+ <nav class="navbar bg-warning shadow">
   <div class="container-fluid">
     <span class="navbar-brand mb-0 h1 shadow">Organize Money</span>
 
@@ -60,31 +60,27 @@ export default {
 
 <style scoped>
 
+
 .modal{
   width: 300px;
 }
-
-.modal-content{
+.modal-contnet{
   width: 300px;
 }
 .list-group-item{
-  background: #00ff88;
+  background: #e4bb29;
 }
-
 .list-group-item:hover{
- background:  #77ffc0;
+  background:#e46d29;
 }
-
 .modal-header{
-  background: linear-gradient(180deg,  #77ffc0 0%, #00ff88 100%);
+  background: #e4bb29;
 }
-
 .modal-body{
-  background: #00ff88;
+  background: #e4bb29;
 }
-
 .modal-footer{
-   background: linear-gradient(180deg,  #00ff88 0%,  #77ffc0 100%);
+  background: #e4bb29;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
