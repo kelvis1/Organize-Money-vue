@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-img"></div>
     <div class="card-img-overlay">
-      <h5 class="card-title mx-auto p-2" style="width: 300px; fw-bold">COM O QUE VOCÊ GASTOU:</h5>
+      <h5 class="card-title mx-auto p-2" style="width: ; fw-bold">ADMINISTRE SEU DINHEIRO AQUI: <button class="btn btn-primary" @click="openModal">Adicionar Gasto</button></h5>
       
       <table class="table">
         <thead>
@@ -23,13 +23,13 @@
         </tbody>
       </table>
 
-      <button class="btn btn-primary" @click="openModal">Adicionar Gasto</button>
+      
 
       <!-- Modal -->
       <div class="modal fade" id="gastoModal" tabindex="-1" aria-labelledby="gastoModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg 800px">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header ">
               <h5 class="modal-title" id="gastoModalLabel">Adicionar Novo Gasto</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -63,13 +63,13 @@ export default {
     return {
       opcoesEscolaridade: [
         { id: 1, valor: 'Saldo' },
-        { id: 2, valor: 'Gastos' },
+        { id: 2, valor: 'Gasto' },
       ],
       escolaridade: null,
       gastos: [],
       novoGasto: {
         nome: '',
-        preco: '',
+        preco: 'R$',
         data: '',
         tipo: '',
         css: ''

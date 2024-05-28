@@ -39,17 +39,7 @@
           
       </div>
 
-      <div class="balance mt-4">
-        <p><strong>SALDO:</strong> <span>R$ {{ saldo.toFixed(2) }}</span></p>
-        <p><strong>GASTOS:</strong> <span>R$ {{ gastos.toFixed(2) }}</span></p>
-      </div>
-
-      <div class="transactions mt-4">
-        <h3>Transações</h3>
-        <ul>
-          <li v-for="(transacao, index) in transacoes" :key="index">{{ transacao }}</li>
-        </ul>
-      </div>
+    
     </div>
     <Boxcenter :titulo="'Boxcenter'" />
   </div>
@@ -73,7 +63,7 @@ export default {
   },
   methods: {
     atualizarSaldo(valor) {
-      this.saldo = valor;
+      this.saldo += valor;
       this.adicionarTransacao('Saldo', valor);
     },
     atualizarGastos(valor) {
