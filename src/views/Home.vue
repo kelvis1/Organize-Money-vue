@@ -26,7 +26,7 @@
             </ul>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
@@ -36,18 +36,16 @@
       <div class="row justify-content-center">
         <Cards :titulo="'Saldo'" :valor="saldo" @atualizar-valor="atualizarSaldo" />
         <Cards :titulo="'Despesa'" :valor="gastos" @atualizar-valor="atualizarGastos" />
-          
       </div>
-
-    
     </div>
-    <Boxcenter :titulo="'Boxcenter'" />
+    <Boxcenter @atualizar-saldo="atualizarSaldo" @atualizar-gasto="atualizarGastos" />
   </div>
 </template>
 
 <script>
 import Cards from '../components/Cards.vue';
 import Boxcenter from '@/components/Boxcenter.vue';
+
 export default {
   name: "home",
   components: {
