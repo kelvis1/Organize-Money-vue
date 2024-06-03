@@ -19,7 +19,7 @@
           <tr v-for="(gasto, index) in gastos" :key="index">
             <td :class="gasto.css">{{ gasto.nome }}</td>
             <td :class="gasto.css">{{ gasto.preco }}</td>
-            <td :class="gasto.css">{{ gasto.data }}</td>
+            <td :class="gasto.css">{{ formatarData(gasto.data) }}</td>
             <td :class="gasto.css">{{ gasto.tipo}}</td>
           </tr>
         </tbody>
@@ -99,6 +99,11 @@ export default {
       } else {
         alert('Por favor, preencha todos os campos.');
       }
+    },
+    formatarData(data) {
+      if (!data) return '';
+      const [year, month, day] = data.split('-');
+      return `${day}/${month}/${year}`;
     }
   }
 };
