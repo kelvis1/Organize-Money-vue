@@ -53,7 +53,7 @@ export default{
 .main-login{
   width: 100vw;
   height: 100vh;
-  background: #e46d29;
+  background: #ebf2f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,9 +85,9 @@ export default{
   align-content: center;
   flex-direction: column;
   padding: 30px 35px;
-  background: #ba4c57;
+  background: #bcebdf;
   border-radius: 20px;
-  box-shadow: 0px 10px 40px #512025;
+  box-shadow: 0px 10px 40px #ade0db;
 }
 .card-login >h1{
   color: #4e3a3b;
@@ -106,7 +106,7 @@ export default{
   border: none;
   border-radius: 10px;
   padding: 15px;
-  background: #d0bc87;
+  background: #ebf2f2;
   color:#4e3a3b;
   font-size: 12pt;
 }
@@ -126,8 +126,8 @@ export default{
     text-transform:uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color:#d0bc87;
-    background:#4e3a3b;
+    color:#4e3a3b;
+    background:#ade0db;
     cursor: pointer;
     box-shadow: 0px 10px 40px -12px #1f212052;
 }
